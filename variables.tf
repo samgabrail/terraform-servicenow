@@ -30,4 +30,5 @@ variable "vm_cpu" {
 variable "vm_ram" {
   type        = string
   description = "Amount of RAM for the vSphere virtual machines (example: 2048)"
+  default     = "2048"
 }
