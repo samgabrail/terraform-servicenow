@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    vsphere = {
+      source = "hashicorp/vsphere"
+      version = "1.23.0"
+    }
+  }
+}
+
 provider "vsphere" {
-  version = "1.23.0"
   vim_keep_alive = 30
   user           = var.vsphere_user
   password       = var.vsphere_password
